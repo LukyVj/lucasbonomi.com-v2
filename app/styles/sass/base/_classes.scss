@@ -1,0 +1,41 @@
+/* ====================================================================================================
+Classes : This library could be named helpers.css, here you will find all technical classes
+(ex : .hide, .clearfix, .fix )
+======================================================================================================*/
+
+/* clearfix
+-------------------------------------------*/
+.cf, .clearfix{
+  clear: both;
+  &:before,&:after{
+    content: '';
+    display: table;
+  }
+}
+/* Hide
+-------------------------------------------*/
+.hide{
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.max-layout{
+  max-width: $max-layout;
+  margin: auto;
+}
+
+.centerer-force{
+  @include centerer();
+}
+
+.centerer{
+  margin: 50px auto;
+}
+.center{
+  text-align: center;
+}
+
+.mobile{
+  display: none;
+}

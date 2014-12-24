@@ -1,0 +1,276 @@
+/* Small Screen */
+@media (max-width: 768px) {
+  // canvas {
+  //   display: none  !important;
+  //   height: 0  !important;
+  //   width: 0  !important;
+  //   opacity: 0 !important;
+  //   visibility: hidden  !important;
+  // }
+
+  ::root, html, body {
+    font-size: 14px;
+  }
+
+    .scroll-down{
+    display: none !important;
+  }
+  .container {
+    padding: 0 16px;
+  }
+
+  .header, .header .zone, .header .zone__background, .header .background__layer {
+    height: 270px;
+    transition: all 0s linear;
+  }
+
+  .header .centerer, .footer .centerer {
+    max-width: 100%;
+    padding: 0 1em;
+  }
+  .zone__content {
+    .centerer-force {
+      width: 80%;
+    }
+  }
+  .last-works {
+    .galleries {
+      margin-top: -1em;
+      float: left;
+      width: 100%;
+    }
+    .items.dribbble-feed {
+      width: 100%;
+      max-width: 100%;
+      margin-top: 3em;
+      li.item {
+        width: 47.5%;
+        margin: 0;
+        margin-left: 2%;
+        &:nth-child(1),
+        &:nth-child(3),
+        &:nth-child(5),
+        &:nth-child(7),
+        &:nth-child(9) {
+          margin: 0;
+          margin-right: 2%;
+        }
+        .item-card {
+          width: 100%;
+          padding: 6px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  .last-works .categories {
+    ul {
+      width: 100%;
+      margin: 10px auto 15px;
+    }
+    ul li {
+      width: 25%;
+      margin: 0;
+      padding: 0;
+      height: 50px;
+      max-width: 50%;
+      &:nth-child(1),
+      &:nth-child(3) {
+        margin-right: 4px;
+      }
+      &:nth-child(2),
+      &:nth-child(4) {
+        margin-left: 4px;
+      }
+      a[class*="btn-"] {
+        float: left;
+        width: 100%;
+        line-height: 1.8;
+        font-size: 14px;
+        text-align: center;
+        padding: 10px 4px;
+      }
+    }
+  }
+  .last-works .items.github-feed {
+    max-width: 100%;
+    height: auto;
+    float: left;
+    margin: 50px auto 0;
+    clear: both;
+    list-style: none;
+  }
+  .last-works .items.github-feed li.item {
+    display: block;
+    float: left;
+    width: 100%;
+  }
+  .last-works .items.github-feed li.item .item-card {
+    height: 80px;
+    padding: 0;
+    margin: 0;
+  }
+  .last-works .items.github-feed li.item .item-card code,
+  .last-works .items.github-feed li.item .item-card span.title,
+  .last-works .items.github-feed li.item .item-card span.git-infos,
+  .last-works .items.github-feed li.item .item-card span.url {
+    clear: both;
+    width: 100%;
+    float: left;
+    height: 30%;
+    text-align: left;
+  }
+  .last-works .items.github-feed li.item .item-card span.title {
+    padding: 8px 12px;
+  }
+  .last-works .items.github-feed li.item .item-card span.git-infos,
+  .last-works .items.github-feed li.item .item-card code {
+    width: 54%;
+    float: left;
+    margin: 0;
+    clear: none;
+    position: relative;
+    top: 10px;
+  }
+  .last-works .items.github-feed li.item .item-card code {
+    width: 46%;
+    text-align: right;
+    padding-right: 34px;
+    &:before {
+      content: '';
+      display: block;
+      width: 16px;
+      height: 16px;
+      background: #ccc;
+      border-radius: 100%;
+      position: absolute;
+      z-index: 0;
+      left: 80%;
+      top: 65%;
+    }
+  }
+  .last-works .items.github-feed li.item .item-card span.url {
+    display: none;
+  }
+  .last-works .items.blog-feed {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 50px 0 0;
+    .item {
+      header h2 {
+        padding: 16px;
+      }
+    }
+  }
+  .last-works .items.blog-feed .item {
+    padding: 0;
+    width: 100%;
+    header .story-share {
+      float: left;
+      width: 100%;
+      top: 5px;
+      padding: 16px;
+      &:before {
+        position: relative;
+        float: left;
+        left: 0;
+      }
+      a {
+        float: left;
+        margin-left: .5em;
+        margin-right: .5em;
+      }
+      [class*="icon-"]:before {
+        font-size: 22px;
+      }
+    }
+    p {
+      padding: 16px;
+    }
+  }
+  .btn {
+    min-width: 0;
+  }
+  .social ul {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+  }
+  body.modal-open [data-view="works"] .display-modal.work-header {
+    opacity: 1;
+    width: calc(100% - 64px);
+  }
+  // Data
+  [data-view="works"] .item-list {
+    margin-top: 6em;
+  }
+  [data-view="works"] .item-list .item .link {
+    padding: 0 30px;
+    max-width: 100%;
+    width: 100%;
+  }
+  [data-view="works"] .item-list .item .title {
+    width: 100%;
+    text-align: center;
+  }
+  .mobile {
+    display: block !important;
+  }
+  .no-mobile {
+    display: none !important;
+  }
+  .footer .container {
+    padding: 0;
+    margin: 0;
+  }
+  .footer p {
+    font-size: 14px;
+  }
+  .about [href*="mailto"][class*="material-"][class*="-btn"] {
+    width: 100%;
+  }
+}
+
+@media (max-width: 568px) {
+  .last-works .categories {
+    ul {
+      width: 100%;
+      margin: 20px auto 15px;
+    }
+    ul li {
+      width: 48%;
+      margin: 2px 0;
+      padding: 0;
+      height: 50px;
+      a[class*="btn-"] {
+        float: left;
+        width: 100%;
+        line-height: 1.8;
+        font-size: 14px;
+        text-align: center;
+        padding: 11px 4px;
+      }
+    }
+  }
+  [class*=material-] .flow-text, [class*=material-] p {
+    line-height: 2.5rem;
+    text-align: justify;
+    letter-spacing: .6px;
+  }
+}
+
+/* Desktop Screen */
+@media (max-width: 992px) and (min-width: 769px) {
+  .last-works .items.dribbble-feed .item .item-card {
+    width: 98%;
+  }
+  .last-works .items.dribbble-feed li.item {
+    width: 33.33%;
+  }
+}
+
+/* Large Screen */
+@media (max-width: 1200px) {}
+
+//

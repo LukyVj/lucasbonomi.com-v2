@@ -1,0 +1,122 @@
+/* ====================================================================================================
+  Animations : Define CSS3 keyframes animations
+  ======================================================================================================*/
+
+$t: 18.65;
+$c-1: #1B9AF7;
+$c-2: #a16634;
+$c-3: #7B72E9;
+$c-4: #b98A1A;
+$c-5: #FF4351;
+$c-6: #B3642B;
+$c-7: #FD6631;
+$c-8: #673AB7;
+$c-9: #303F9F;
+$c-10: #03A9F4;
+$c-11: #1B9AF7;
+$c-12: #FFE93B;
+
+.zone__background {
+  position: relative;
+  height: 270px;
+  width: 100%;
+  float: left;
+  position: relative;
+  .background__layer {
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: absolute;
+    animation: fadeOut $t * 1.5 + s linear;
+    opacity: 1;
+    &:nth-child(1) {
+      background: linear-gradient(90deg, $c-1, $c-2);
+      animation-delay: $t * 5 + s;
+    }
+    &:nth-child(2) {
+      background: linear-gradient(-45deg, $c-12, $c-11);
+      animation-delay: $t * 4 + s;
+    }
+    &:nth-child(3) {
+      background: linear-gradient(90deg, $c-8, $c-6);
+      animation-delay: $t * 3 + s;
+    }
+    &:nth-child(4) {
+      background: linear-gradient(45deg, $c-10, $c-8);
+      animation-delay: $t * 2 + s;
+    }
+    &:nth-child(5) {
+     background: linear-gradient(90deg, $c-9, $c-10);
+      animation-delay: $t + s;
+    }
+    &:nth-child(6) {
+      background: linear-gradient(-45deg, $c-11, $c-12);
+      animation-delay: 0;
+    }
+  }
+}
+
+$size--dot: 10px;
+$margin--dot: 8px;
+
+$animation--speed: 1.6s;
+$animation--type: ease;
+
+.scroll-down{
+  width: $size--dot*2.5;
+  height: ($size--dot*3.85)+($margin--dot*2.85);
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate( -50%, -50%);
+  
+  box-shadow: inset 0 0 0 1px rgba(white, .2);
+  padding: $margin--dot;
+  border-radius: 50px; 
+  opacity: .8;
+  
+  .dot{
+    width: $size--dot;
+    height: $size--dot;
+    display: block;
+    background: #fff;
+    border-radius: 100%;
+    box-shadow: 0 $size--dot+$margin--dot 0 rgba(255,255,255,0),
+      0 ($size--dot+$margin--dot)*2 0 rgba(255,255,255,0);
+    
+    animation: dotAnimation $animation--speed $animation--type infinite;
+  }
+  
+}
+
+
+@keyframes dotAnimation{
+  99%{
+    background: rgba(255,255,255,1);
+    box-shadow: 0 $size--dot+$margin--dot 0 rgba(255,255,255,0),
+      0 ($size--dot+$margin--dot)*2 0 rgba(255,255,255,0);
+  }
+  33%{
+    background: rgba(255,255,255,0);
+    box-shadow: 0 $size--dot+$margin--dot 0 rgba(255,255,255,1),
+      0 ($size--dot+$margin--dot)*2 0 rgba(255,255,255,0);
+  }
+  66%{
+    background: rgba(255,255,255,0);
+    box-shadow: 0 $size--dot+$margin--dot 0 rgba(255,255,255,0),
+      0 ($size--dot+$margin--dot)*2 0 rgba(255,255,255,1); 
+  }
+}
+
+
+
+
+.footer {
+  .zone__background {
+    height: 68px;
+  }
+  .zone__content {
+    width: 100%;
+    position: absolute;
+  }
+}

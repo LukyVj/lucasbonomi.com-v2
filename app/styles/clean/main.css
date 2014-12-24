@@ -1,0 +1,1589 @@
+@charset "UTF-8";
+
+/* ==========================================================================
+  OVCSS Settings library :
+
+  Settings to use with EfficaCSS
+  http://lukyvj.github.io/EfficaCSS
+ ========================================================================== */
+
+/* ==========================================================================
+OVCSS Settings library :
+========================================================================== */
+
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:100,200,300,400,700|Roboto:100,200,300,400,500,600);
+
+@import url(bootstrap.min.css);
+
+@font-face {
+  font-family: Material-Design-Icons;
+  src: url(../fonts/Material-Design-Icons/Material-Design-Icons.eot);
+  src: url(../fonts/Material-Design-Icons/Material-Design-Icons.eot?#iefix) format("embedded-opentype"), url(../fonts/Material-Design-Icons/Material-Design-Icons.woff) format("woff"), url(../fonts/Material-Design-Icons/Material-Design-Icons.ttf) format("truetype"), url(../fonts/Material-Design-Icons/Material-Design-Icons.svg#Material-Design-Icons) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 1em;
+  background: #eff0F2;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+[class*=material-] {
+  font-family: Roboto,sans-serif;
+}
+
+@media only screen and (min-width: 360px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 0) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    line-height: .8rem;
+  }
+}
+
+@media only screen and (min-width: 390px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    font-size: 1.224rem;
+  }
+}
+
+@media only screen and (min-width: 30px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    line-height: .904rem;
+  }
+}
+
+@media only screen and (min-width: 420px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    font-size: 1.248rem;
+  }
+}
+
+@media only screen and (min-width: 60px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    line-height: 1.008rem;
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    font-size: 1.272rem;
+  }
+}
+
+@media only screen and (min-width: 90px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    line-height: 1.112rem;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    font-size: 1.296rem;
+  }
+}
+
+@media only screen and (min-width: 120px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    line-height: 1.216rem;
+  }
+}
+
+@media only screen and (min-width: 510px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    font-size: 1.32rem;
+  }
+}
+
+@media only screen and (min-width: 150px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    line-height: 1.32rem;
+  }
+}
+
+@media only screen and (min-width: 540px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    font-size: 1.344rem;
+  }
+}
+
+@media only screen and (min-width: 180px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    line-height: 1.424rem;
+  }
+}
+
+@media only screen and (min-width: 570px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    font-size: 1.368rem;
+  }
+}
+
+@media only screen and (min-width: 210px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    line-height: 1.528rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    font-size: 1.392rem;
+  }
+}
+
+@media only screen and (min-width: 240px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    line-height: 1.632rem;
+  }
+}
+
+@media only screen and (min-width: 630px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    font-size: 1.416rem;
+  }
+}
+
+@media only screen and (min-width: 270px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    line-height: 1.736rem;
+  }
+}
+
+@media only screen and (min-width: 660px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    font-size: 1.44rem;
+  }
+}
+
+@media only screen and (min-width: 300px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    line-height: 1.84rem;
+  }
+}
+
+@media only screen and (min-width: 690px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    font-size: 1.464rem;
+  }
+}
+
+@media only screen and (min-width: 330px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    line-height: 1.944rem;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    font-size: 1.488rem;
+  }
+}
+
+@media only screen and (min-width: 360px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    line-height: 2.048rem;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    font-size: 1.512rem;
+  }
+}
+
+@media only screen and (min-width: 390px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    line-height: 2.152rem;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    font-size: 1.536rem;
+  }
+}
+
+@media only screen and (min-width: 420px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    line-height: 2.256rem;
+  }
+}
+
+@media only screen and (min-width: 810px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    font-size: 1.56rem;
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    line-height: 2.36rem;
+  }
+}
+
+@media only screen and (min-width: 840px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    font-size: 1.584rem;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    line-height: 2.464rem;
+  }
+}
+
+@media only screen and (min-width: 870px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    font-size: 1.608rem;
+  }
+}
+
+@media only screen and (min-width: 510px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    line-height: 2.568rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    font-size: 1.632rem;
+  }
+}
+
+@media only screen and (min-width: 540px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    line-height: 2.672rem;
+  }
+}
+
+@media only screen and (min-width: 930px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    font-size: 1.656rem;
+  }
+}
+
+@media only screen and (min-width: 570px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    line-height: 2.776rem;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    font-size: 1.68rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  [class*=material-] .flow-text,
+  [class*=material-] p {
+    line-height: 2.88rem;
+  }
+}
+
+[class*=material-][class*="-btn"] {
+  display: inline-block;
+  padding: .65em;
+  margin: 0 0 15px;
+  letter-spacing: .8px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow .2s ease-out;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+[class*=material-][class*="-btn"]:hover {
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+[class*=material-][class*="-btn"]:active {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+}
+
+[class*=material-][class*="-lightblue"] {
+  background: #03a9f4;
+}
+
+[class*=material-] [class*="-icon"] {
+  overflow: hidden;
+  display: inline-block;
+  font-size: 100%;
+}
+
+[class*=material-] p [class*="-icon"] {
+  line-height: .8;
+}
+
+[class*=material-][class*="-lightblue"][class*=" active"] {
+  background: #03a6ef !important;
+}
+
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: currentColor;
+  }
+
+  to {
+    width: 0;
+    background: 0 0;
+  }
+}
+
+@keyframes inputHighlighter {
+  from {
+    background: currentColor;
+  }
+
+  to {
+    width: 0;
+    background: 0 0;
+  }
+}
+
+@-webkit-keyframes ripple {
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(2.5);
+    transform: scale(2.5);
+  }
+}
+
+@keyframes ripple {
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(2.5);
+    transform: scale(2.5);
+  }
+}
+
+.footer {
+  width: 100%;
+  float: left;
+  color: #ccc;
+  text-align: center;
+}
+
+.footer p.flow-text,
+[class*=material-] .footer p {
+  font-size: 14px;
+}
+
+/* ==========================================================================
+   OVCSS Functions library :
+   Functions to use with EfficaCSS
+   http://lukyvj.github.io/EfficaCSS
+========================================================================== */
+
+/* font var
+-----------------------------------------------------*/
+
+/* Sizes
+-----------------------------------------------------*/
+
+/* ====================================================================================================
+   Mixins for EfficaCSS
+   ======================================================================================================*/
+
+/* Start mixins, reset ect
+-------------------------------------------------------------------*/
+
+/* Font settings
+-------------------------------------------------------------------*/
+
+/* Font-face
+------------------------------------------*/
+
+/* regular font management
+----------------------------------------------------------------------*/
+
+/* Helper : Border-radius
+-------------------------------------------------------------------*/
+
+/* borders
+-----------------------------------------------------------------*/
+
+/* single element
+-----------------------------------------------------------------*/
+
+/* Square
+------------------------------------------------------------------*/
+
+/* Backgrounds
+------------------------------------------------------------------*/
+
+/* Shadow effects
+-------------------------------------------------------------------*/
+
+/* Inset outset blocks
+--------------------------------------------------------------------*/
+
+/* Text-shadows [ b = bottom, t = top, r = right, l = left ]
+---------------------------------------------------------------------*/
+
+/* Single elements
+--------------------------------------------------------------------*/
+
+/* Grid
+---------------------------------------------------------------*/
+
+/* Fix icons */
+
+/* ==========================================================================
+ OVCSS Typographic settings :
+========================================================================== */
+
+@font-face {
+  font-family: ProximaNova-Regular;
+  src: url("../fonts/ProximaNova/ProximaNova-Regular.eot?") format("eot"), url("../fonts/ProximaNova/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Regular.svg#ProximaNova-Regular") format("svg"), url("../fonts/ProximaNova/ProximaNova-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: ProximaNova-Light;
+  src: url("../fonts/ProximaNova/ProximaNova-Light.eot?") format("eot"), url("../fonts/ProximaNova/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Light.svg#ProximaNova-Light") format("svg"), url("../fonts/ProximaNova/ProximaNova-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: ProximaNova-Bold;
+  src: url("../fonts/ProximaNova/ProximaNova-Bold.eot?") format("eot"), url("../fonts/ProximaNova/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Bold.svg#ProximaNova-Bold") format("svg"), url("../fonts/ProximaNova/ProximaNova-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: ProximaNova-Semibold;
+  src: url("../fonts/ProximaNova/ProximaNova-Semibold.eot?") format("eot"), url("../fonts/ProximaNova/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Semibold.svg#ProximaNova-Semibold") format("svg"), url("../fonts/ProximaNova/ProximaNova-Semibold.ttf") format("truetype");
+}
+
+/* Typographic media queries */
+
+@media all and (max-width: 40em) {
+  html,
+  body {
+    line-height: 22px;
+  }
+}
+
+@media all and (max-width: 60em) {
+  html,
+  body {
+    line-height: 24px;
+  }
+}
+
+/* ====================================================================================================
+   Basic icons stylesheet : Here you define the style of your icons
+   ======================================================================================================*/
+
+@font-face {
+  font-family: "kevin-font";
+  src: url("../fonts/icon-font/icon-font.eot");
+  src: url("../fonts/icon-font/icon-font.eot?#iefix") format("embedded-opentype"), url("../fonts/icon-font/icon-font.woff") format("woff"), url("../fonts/icon-font/icon-font.ttf") format("truetype"), url("../fonts/icon-font/icon-font.svg#kevin-font") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "kevin-font" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 20px;
+}
+
+.icon-close:before {
+  content: "g";
+}
+
+.icon-codepen:before {
+  content: "a";
+}
+
+.icon-github:before {
+  content: "h";
+}
+
+.icon-dribbble:before {
+  content: "b";
+}
+
+.icon-instagram:before {
+  content: "c";
+}
+
+.icon-linkedin:before {
+  content: "d";
+}
+
+.icon-twitter:before {
+  content: "f";
+}
+
+.icon-comment:before {
+  content: "i";
+}
+
+.icon-heart:before {
+  content: "j";
+}
+
+.icon-eye:before {
+  content: "k";
+}
+
+.icon-code-fork:before {
+  content: "l";
+}
+
+/* ====================================================================================================
+    Basic images stylesheet : Here you define the style of your images
+======================================================================================================*/
+
+/* ====================================================================================================
+Colors : Here you define your color palette & colorscheme, we defined some fresh colors for you
+======================================================================================================*/
+
+/* Shortcuts
+--------------------------------------------------------------------------------------------------*/
+
+/* Theme
+--------------------------------------------------------------------------------------------------*/
+
+/* ====================================================================================================
+Buttons : Here is the main buttons stylesheet
+======================================================================================================*/
+
+/* ====================================================================================================
+Classes : This library could be named helpers.css, here you will find all technical classes
+(ex : .hide, .clearfix, .fix )
+======================================================================================================*/
+
+/* clearfix
+-------------------------------------------*/
+
+/* Hide
+-------------------------------------------*/
+
+.centerer-force {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centerer {
+  margin: 50px auto;
+}
+
+.center {
+  text-align: center;
+}
+
+/* ====================================================================================================
+Basic form stylesheet : Here you define the basic style of your forms
+======================================================================================================*/
+
+/* ====================================================================================================
+  Animations : Define CSS3 keyframes animations
+  ======================================================================================================*/
+
+.zone__background {
+  position: relative;
+  height: 270px;
+  width: 100%;
+  float: left;
+  position: relative;
+}
+
+.zone__background .background__layer {
+  width: 100%;
+  height: 100%;
+  float: left;
+  position: absolute;
+  animation: fadeOut 15.975s linear;
+  opacity: 1;
+}
+
+.zone__background .background__layer:nth-child(1) {
+  background: linear-gradient(90deg, #1B9AF7, #a16634);
+  animation-delay: 53.25s;
+}
+
+.zone__background .background__layer:nth-child(2) {
+  background: linear-gradient(-45deg, #7B72E9, #b98A1A);
+  animation-delay: 42.6s;
+}
+
+.zone__background .background__layer:nth-child(3) {
+  background: linear-gradient(90deg, #FF4351, #B3642B);
+  animation-delay: 31.95s;
+}
+
+.zone__background .background__layer:nth-child(4) {
+  background: linear-gradient(45deg, #FD6631, #55DAE1);
+  animation-delay: 21.3s;
+}
+
+.zone__background .background__layer:nth-child(5) {
+  background: linear-gradient(90deg, #FFE93B, #7B72E9);
+  animation-delay: 10.65s;
+}
+
+.zone__background .background__layer:nth-child(6) {
+  background: linear-gradient(-45deg, #1B9AF7, #FFE93B);
+  animation-delay: 0;
+}
+
+.footer .zone__background {
+  height: 68px;
+}
+
+.footer .zone__content {
+  width: 100%;
+  position: absolute;
+}
+
+/* ====================================================================================================
+Base : This stylesheet will be your base, you will define the main lines of your project stylesheet.
+======================================================================================================*/
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  float: left;
+  font-family: ProximaNova-regular, "Helvetica", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 16px;
+}
+
+.galleries[data-selected*="dribbble"] ul:not([data-gallery*="dribbble"]) {
+  display: none;
+}
+
+body {
+  perspective: 550px;
+  perspective-origin: 50%;
+  background: #edecec;
+}
+
+ul {
+  padding: 0;
+}
+
+p {
+  font-weight: 400;
+}
+
+#particles-js {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: .4;
+}
+
+.header,
+.footer,
+.zone__background {
+  width: 100%;
+  float: left;
+  height: 270px;
+  background: linear-gradient(45deg, #1B9AF7, #FFE93B);
+  text-align: center;
+  position: relative;
+}
+
+.header h1 {
+  color: #fff;
+  font-size: 20px;
+}
+
+.header h2 {
+  color: #fff;
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.header {
+  background: transparent;
+  background-image: none;
+}
+
+.header img {
+  width: 90px;
+  border-radius: 100%;
+}
+
+.header .centerer-force {
+  width: 220px;
+}
+
+.header .social {
+  margin-top: 1.5em;
+}
+
+.header .social li span {
+  color: #fff;
+}
+
+.header .social li:hover span {
+  color: #fff;
+  opacity: .7;
+}
+
+.header,
+.header .zone,
+.header .zone__background,
+.header .background__layer {
+  height: 100%;
+  transition: height 1s ease;
+}
+
+.header.minimized,
+.header .zone.minimized,
+.header .zone__background.minimized,
+.header .background__layer.minimized {
+  height: 270px;
+}
+
+.zone,
+.zone__background,
+.background__layer {
+  transition: height 1s ease 5s !important;
+}
+
+/* Content */
+
+.content,
+.about {
+  position: relative;
+  width: 100%;
+  height: auto;
+  float: left;
+  background: #edecec;
+  box-shadow: inset 0 -1px 0 #b8c4c7, inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.content:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 30px solid #edecec;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 80px;
+}
+
+.about {
+  box-shadow: 0 0 0;
+  background: #fff;
+  margin-top: 80px;
+  padding-top: 85px;
+  padding-bottom: 61px;
+}
+
+.about .container > header,
+.about .container section {
+  max-width: 510px;
+  margin: auto;
+}
+
+.about .container > header {
+  width: 100%;
+}
+
+.about .container > header h2 {
+  text-align: center;
+  font-size: 20px;
+  color: #b8c4c7;
+}
+
+.about header img {
+  width: 140px;
+  height: 140px;
+  background: transparent;
+  margin: 38px auto 42px;
+  border-radius: 30px;
+  display: block;
+}
+
+/* Last work */
+
+.last-works header {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.last-works header h2 {
+  font-size: 20px;
+  color: #a3aEb0;
+}
+
+.last-works .categories {
+  width: 100%;
+  margin: auto;
+  float: left;
+}
+
+.last-works .categories ul {
+  width: 490px;
+  height: 40px;
+  margin: 40px auto 55px;
+}
+
+.last-works .categories ul li {
+  float: left;
+  list-style: none;
+}
+
+.last-works .categories li {
+  text-align: center;
+  display: inline-block;
+  width: 25%;
+  padding: 0;
+  margin: 0;
+}
+
+.last-works .categories li a {
+  color: #fff;
+  width: 90%;
+}
+
+.last-works .categories ul li a {
+  margin-top: 4px;
+  font-size: 14px;
+  font-family: ProximaNova-regular, "Helvetica", sans-serif;
+}
+
+.last-works .categories ul li a:active {
+  color: #fff;
+}
+
+.last-works .items.github-feed {
+  max-width: 1010px;
+  height: auto;
+  margin: auto;
+  clear: both;
+  list-style: none;
+}
+
+.last-works .items.github-feed li.item {
+  width: 98%;
+  margin: auto;
+}
+
+.last-works .items.github-feed li.item a {
+  display: block;
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+
+.last-works .items.github-feed li.item .item-card {
+  width: 100%;
+  height: 52px;
+  background: #fff;
+  padding: 4px;
+  padding-left: 10px;
+  margin: 0 auto 2px;
+  text-align: center;
+  line-height: 1;
+  box-shadow: 0 0 1px 1px #e2e1e1;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.last-works .items.github-feed li.item .item-card:first-child {
+  border-top-left-radius: 1px;
+  border-top-right-radius: 1px;
+}
+
+.last-works .items.github-feed li.item .item-card:last-child {
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 1px;
+}
+
+.last-works .items.github-feed li.item .item-card code,
+.last-works .items.github-feed li.item .item-card span.title,
+.last-works .items.github-feed li.item .item-card span.git-infos,
+.last-works .items.github-feed li.item .item-card span.url {
+  border-radius: 2px;
+  height: 100%;
+  display: block;
+  width: 15%;
+  float: left;
+  margin-left: 4px;
+  font-size: 2rem;
+  line-height: 42px;
+  width: auto;
+  float: left;
+}
+
+.last-works .items.github-feed li.item .item-card code {
+  float: right;
+  color: #333;
+  display: inline-block;
+  padding: 2px 12px;
+  font-size: 14px;
+  font-family: 'Roboto', Sans-serif;
+  background-color: transparent;
+  border-radius: 3px;
+  height: auto;
+  position: relative;
+}
+
+.last-works .items.github-feed li.item .item-card code:before {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: #ccc;
+  border-radius: 100%;
+  position: absolute;
+  left: -14px;
+  top: 16px;
+}
+
+.last-works .items.github-feed li.item .item-card code[data-code*="JavaScript"]:before {
+  background-color: #f1e05a;
+}
+
+.last-works .items.github-feed li.item .item-card code[data-code*="CSS"]:before {
+  background-color: #563d7c;
+}
+
+.last-works .items.github-feed li.item .item-card span.url {
+  font-size: 14px;
+  color: #ccc;
+  float: left;
+  padding: 0 .5em;
+  line-height: 44px;
+  transition: color .3s ease;
+}
+
+.last-works .items.github-feed li.item .item-card span.url:before {
+  content: '( ';
+}
+
+.last-works .items.github-feed li.item .item-card span.url:after {
+  content: ' )';
+}
+
+.last-works .items.github-feed li.item .item-card span.git-infos {
+  width: auto;
+  font-size: 14px;
+  color: #ccc;
+  float: right;
+  padding: 0 10px;
+  margin-right: 0;
+}
+
+.last-works .items.github-feed li.item .item-card span.git-infos:before,
+.last-works .items.github-feed li.item .item-card span.git-infos:after {
+  content: '';
+  width: 1px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  background: #e2e1e1;
+  top: 0;
+  margin-left: -12px;
+}
+
+.last-works .items.github-feed li.item .item-card span.git-infos:after {
+  margin-left: 90px;
+}
+
+.last-works .items.github-feed li.item .item-card span.git-infos [class*="icon"]:before {
+  line-height: 0;
+  font-size: 20px;
+  margin: 0;
+  position: relative;
+  top: 4px;
+  transition: color .3s ease;
+}
+
+.last-works .items.github-feed li.item:hover span.url,
+.last-works .items.github-feed li.item:hover [class*="icon"]:before {
+  color: #666;
+}
+
+.last-works .items.dribbble-feed {
+  max-width: 1010px;
+  height: auto;
+  margin: auto;
+  clear: both;
+  list-style: none;
+}
+
+.last-works .items.dribbble-feed li.item {
+  float: left;
+  width: 25%;
+}
+
+.last-works .items.dribbble-feed li.item a {
+  text-decoration: none;
+}
+
+.last-works .items.dribbble-feed .item .item-card {
+  width: 228px;
+  height: auto;
+  background: #fff;
+  padding: 10px;
+  padding-bottom: 5px;
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 1px;
+  box-shadow: 0 0 1px 1px #e2e1e1;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.last-works .items.dribbble-feed .item .item-card img {
+  max-width: 100%;
+}
+
+.last-works .items.dribbble-feed .item .item-card span.title {
+  padding: 0;
+  margin: 5px 0 0;
+  display: block;
+  color: #b8c4c7;
+  text-overflow: ellipsis;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.last-works .items.dribbble-feed .item .item-card .image {
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+
+.last-works .items.dribbble-feed .item .item-card .item_informations {
+  width: 100%;
+  height: calc(100% - 19%);
+  float: left;
+  position: absolute;
+  line-height: 100%;
+  top: -100%;
+  opacity: .6;
+  transition: top .4s ease, opacity .15s ease;
+}
+
+.last-works .items.dribbble-feed .item .item-card .item_informations .fake-background,
+.last-works .items.dribbble-feed .item .item-card .item_informations .info_content {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.last-works .items.dribbble-feed .item .item-card .item_informations .fake-background:after {
+  background-position-y: 5em !important;
+  transition: background-position-y .2s ease;
+}
+
+.last-works .items.dribbble-feed .item .item-card .item_informations .info_content {
+  z-index: 3;
+  background: rgba(255, 255, 255, 0.65);
+}
+
+.last-works .items.dribbble-feed .item .item-card .item_informations .info_content > span {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000;
+  float: left;
+  text-align: center;
+  width: 33%;
+}
+
+.last-works .items.dribbble-feed .item .item-card .item_informations .info_content > span > a {
+  color: #000;
+}
+
+.last-works .items.dribbble-feed .item .item-card .item_informations .info_content > span > a span {
+  display: block;
+  clear: both;
+}
+
+.last-works .items.dribbble-feed .item .item-card .item_informations .info_content .views:hover a {
+  color: #3f51b5;
+}
+
+.last-works .items.dribbble-feed .item .item-card .item_informations .info_content .likes:hover a {
+  color: #f44336;
+}
+
+.last-works .items.dribbble-feed .item .item-card .item_informations .info_content .comments:hover a {
+  color: #2196F3;
+}
+
+.last-works .items.dribbble-feed .item .item-card:hover .item_informations {
+  top: 0.2px;
+  opacity: 1;
+}
+
+.last-works .items.dribbble-feed .item .item-card:hover .fake-background:after {
+  transition: background-position-y .25s ease;
+  background-position-y: 0em !important;
+}
+
+.about section {
+  clear: both;
+}
+
+.about section p.flow-text {
+  font-size: 16px;
+  color: #A3AEB0;
+}
+
+.about section p.flow-text.center {
+  margin-bottom: 58px;
+}
+
+.about [href*="mailto"][class*="material-"][class*="-btn"] {
+  margin: 82px auto;
+  width: 320px;
+  height: 54px;
+  padding: 20px 0;
+  font-size: 18px;
+  display: block;
+  line-height: 1;
+  margin: 58px auto;
+}
+
+.about [href*="mailto"][class*="material-"][class*="-btn"]:hover {
+  color: #fff;
+}
+
+.about .social {
+  margin-bottom: 61px;
+  max-width: 320px;
+  margin: auto;
+}
+
+.social {
+  margin-top: 1.5em;
+}
+
+.social ul {
+  list-style: none;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+}
+
+.social ul li {
+  float: left;
+  width: 16.66%;
+  height: 20px;
+  text-align: center;
+}
+
+.social ul li a {
+  text-decoration: none;
+}
+
+.social ul li span {
+  color: #b8c4c7;
+}
+
+.social ul li:hover {
+  text-decoration: none;
+}
+
+.social ul li:hover span {
+  color: #c55847;
+}
+
+.footer {
+  height: 68px;
+  float: left;
+  color: #fff;
+}
+
+.footer p.flow-text {
+  line-height: 70px;
+  margin: 0;
+  height: 0;
+}
+
+.footer p.flow-text [class*="m-icon"] {
+  line-height: .6;
+}
+
+.footer p.flow-text [class*="m-icon"]:before {
+  font-size: 12px;
+  color: #f44336;
+}
+
+[data-view="works"] .header {
+  height: 5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+[data-view="works"] .work-header {
+  position: fixed;
+  width: 100%;
+  max-width: 1140px;
+  z-index: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+  padding: 0;
+  transition: all .5s ease .6s;
+  top: 45px;
+  opacity: 0;
+  height: 0;
+}
+
+[data-view="works"] .work-header img {
+  float: left;
+  cursor: pointer;
+}
+
+[data-view="works"] .work-header a {
+  float: right;
+  text-decoration: none;
+}
+
+[data-view="works"] .work-header a span {
+  margin-top: 15px;
+  display: block;
+  color: #c8c4c7;
+}
+
+[data-view="works"] .work-header a span:before {
+  font-size: 40px;
+}
+
+[data-view="works"] .work-header a:hover span {
+  color: #b54d41;
+}
+
+.about .container section.companies {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(left, white, #eff0f2, white);
+  margin: 2em auto;
+}
+
+.about .container section.companies > .container {
+  max-width: 510px;
+  position: relative;
+  height: 220px;
+  display: block;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.about .container section.companies > .container:before,
+.about .container section.companies > .container:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100px;
+  border-radius: 50%;
+  top: -100px;
+  position: absolute;
+  box-shadow: 0 0 4em -1em rgba(0, 0, 0, 0.45);
+}
+
+.about .container section.companies > .container:after {
+  top: 220px;
+}
+
+.about .container section.companies ul {
+  padding: 1em;
+}
+
+.about .container section.companies li {
+  display: block;
+  float: left;
+  width: 33.33%;
+  height: 92px;
+  position: relative;
+  opacity: .4;
+  transition: opacity .3s ease;
+}
+
+.about .container section.companies li:hover {
+  opacity: .8;
+}
+
+.about .container section.companies li img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 100px;
+}
+
+.about .container section.companies li img.thevault {
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+  width: 80px;
+}
+
+.about .container section.companies li img[src*="rocket-design"] {
+  width: 30%;
+}
+
+@media (max-width: 568px) {
+  .last-works .categories ul {
+    width: 100%;
+    margin: 20px auto 15px;
+  }
+
+  .last-works .categories ul li {
+    width: 50% !important;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    max-width: 50%;
+  }
+
+  .last-works .categories ul li a[class*="btn-"] {
+    float: left;
+    width: 96%;
+    line-height: 1.8;
+    font-size: 14px;
+    text-align: center;
+    padding: 20% 4px;
+  }
+}
+
+/* Small Screen */
+
+@media (max-width: 768px) {
+  ::root,
+  html,
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 0 10%;
+    padding: 0 32px;
+  }
+
+  .zone__content .centerer-force {
+    width: 80%;
+  }
+
+  .last-works .galleries {
+    margin-top: -1em;
+    float: left;
+  }
+
+  .last-works .items.dribbble-feed {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 3em;
+  }
+
+  .last-works .items.dribbble-feed li.item {
+    width: 43%;
+    margin: 0 3%;
+  }
+
+  .last-works .items.dribbble-feed li.item .item-card {
+    width: 100%;
+  }
+
+  .last-works .categories ul {
+    width: 100%;
+    margin: 20px auto 15px;
+  }
+
+  .last-works .categories ul li {
+    width: 25%;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    max-width: 50%;
+  }
+
+  .last-works .categories ul li a[class*="btn-"] {
+    float: left;
+    width: 96%;
+    line-height: 1.8;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 4px;
+  }
+
+  .social ul {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+  }
+
+  .no-mobile {
+    display: none !important;
+  }
+
+  .footer .container {
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer p {
+    font-size: 14px;
+  }
+}
+
+/* Desktop Screen */
+
+@media (max-width: 992px) and (min-width: 769px) {
+  .last-works .items.dribbble-feed .item .item-card {
+    width: 96%;
+  }
+
+  .last-works .items li.item {
+    width: 33.33%;
+  }
+}
+
+/* Large Screen */
+
+/*
+
+  If it’s a hack, it goes in shame.css.
+  Document all hacks fully:
+  What part of the codebase does it relate to?
+  Why was this needed?
+  How does this fix it?
+  How might you fix it properly, given more time?
+  Do not blame the developer; if they explained why they had to do it then their reasons are probably (hopefully) valid.
+  Try and clean shame.css up when you have some down time.
+  Even better, get a tech-debt story in which you can dedicate actual sprint time to it.
+
+*/
+
+[class*=material-btn][class*=" active"]:not([disabled]) {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16), 0 1px 2px 0 rgba(0, 0, 0, 0.26) !important;
+}
+
+[class*=material-btn][class*=" active"]:not([disabled])[class*="-lightblue"] {
+  background: #0398db !important;
+}
+
+/* ==========================================================================
+ Main style of your project  :
+ ========================================================================== */
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,46 @@
+/* ====================================================================================================
+Buttons : Here is the main buttons stylesheet
+======================================================================================================*/
+
+.btn{
+
+  min-width: 130px;
+  height: 32px;
+
+  padding: 5px;
+  border:1px solid #a3aeb0;
+  background: #f0f0f0;
+
+  text-align: center;
+  border-radius: 100px;
+
+
+  &:hover{
+    background: #f5f5f5;
+  }
+  &:active, .active, .active &{
+    background: #8db034;
+    box-shadow: none;
+  }
+
+  &.btn-spe-mob{
+    display: block;
+    margin: auto;
+    border: 0;
+    @include square(75px, transparent);
+    margin-bottom: 8em;
+
+    span.icon{
+      color: #c8c4c7;
+      &:before{
+        font-size: 75px;
+        color: #c8c4c7;
+      }
+    }
+  }
+
+  &[disabled]{
+    opacity: .33 !important;
+  }
+  
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="562px" height="55px" viewBox="0 0 562 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.4 (8054) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="106.073242%" y1="99.999994%" x2="1.49839353%" y2="99.999994%" id="linearGradient-1">
+            <stop stop-color="#C07533" offset="0%"></stop>
+            <stop stop-color="#D7724A" offset="12.3463431%"></stop>
+            <stop stop-color="#D4584E" offset="67.2134088%"></stop>
+            <stop stop-color="#B74645" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M3.6704318,50.8965879 C3.6704318,50.8965879 54.4599394,51.405381 106.929474,36.839934 C159.399008,22.2744871 185.074095,11.6097861 282.836177,35.0242413 C380.598258,58.4386966 438.466962,4.45875144 557.937563,4.45875081" id="Path-1" stroke="url(#linearGradient-1)" stroke-width="6" sketch:type="MSShapeGroup"></path>
+    </g>
+</svg>

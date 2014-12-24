@@ -1,0 +1,11 @@
+$galleries: "dribbble", "github", "blog", "projects";
+
+@each $gallery in $galleries {
+  .galleries {
+    &[data-selected*="#{$gallery}"] {
+      ul:not([data-gallery*="#{$gallery}"]) {
+        display: none;
+      }
+    }
+  }
+}
