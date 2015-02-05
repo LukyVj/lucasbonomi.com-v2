@@ -8464,6 +8464,8 @@ Classes : This library could be named helpers.css, here you will find all techni
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -8489,6 +8491,9 @@ form input {
 /* ====================================================================================================
   Animations : Define CSS3 keyframes animations
   ======================================================================================================*/
+.zone__background .background__layer, .footer {
+  background: -webkit-linear-gradient(45deg, #1B9AF7, #a16634) !important;
+}
 .zone__background .background__layer.c_1, .footer.c_1 {
   background: -webkit-linear-gradient(45deg, #1B9AF7, #a16634) !important;
 }

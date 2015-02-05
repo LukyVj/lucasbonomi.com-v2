@@ -22,11 +22,6 @@
 
         <div class="zone__background">
             <div class="background__layer"></div>
-            <div class="background__layer"></div>
-            <div class="background__layer"></div>
-            <div class="background__layer"></div>
-            <div class="background__layer"></div>
-            <div class="background__layer"></div> 
             <!-- Particles -->
             <div id="particles-js" class="no-mobile"></div>
 
@@ -158,12 +153,33 @@
 
                         <div class="zone__content">
                             <div class="container">
-                                <p>2014 - <span class="year"></span> - Made in France, with <span class="m-icon-red icon-heart"></span> © All rights reserved</p>
+                                <p> <a href="#modal" data-btn-type="toggle">About</a>  | 2014 - <span class="year"></span> - Made in France, with <span class="m-icon-red icon-heart"></span> © All rights reserved</p>
                             </div>
                         </div>
                     </div>
 
                 </div>
+
+                <div class="m-card off-screen bit-3 hidden" data-type="main-modal" data-background-text="about" data-background-color="#03a9f4" data-background-url="http://puu.sh/f3uEx/4b734b79a3.png" data-curtain="true" data-depth="4"  id="modal">
+<header data-background>
+</header>
+<section class="inner__card">
+<h2 class="title">More infos about this website</h2>
+<p>This website uses some cool open sourced scripts and frameworks to work :</p>
+<ul class="material-inline-list">
+  <li><a href="#">Particles.js</a></li>
+  <li><a href="#">Framaterial ( pre release )</a></li>
+  <li><a href="#">Bootstrap</a></li>
+  <li><a href="#">Gitquery</a></li>
+  <li><a href="#">Jribbble</a></li>
+  <li><a href="#">Kimono</a></li>
+  <li><a href="#">jQuery</a></li>
+</ul>
+</section>
+<footer>
+<a href="#modal" data-btn-type="toggle" class="material-btn-red">Close</a>
+</footer>
+</div>
 
                 <script>
 
@@ -182,9 +198,8 @@
               <script src="dist/scripts/jquery.js"></script>
               <script src="dist/scripts/bootstrap.js"></script>
               <script src="dist/scripts/libs.js"></script>
-              <script src="dist/scripts/apis.js"></script>
               <script src="dist/scripts/main.js"></script>
-
+              <script src="dist/scripts/apis.js"></script>
                 
           </body>
           </html>
