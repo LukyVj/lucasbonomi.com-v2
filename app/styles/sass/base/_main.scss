@@ -27,7 +27,6 @@ p {
   width: 100%;
   float: left;
   height: 270px;
-  background: linear-gradient(45deg, $c-11, $c-12);
   text-align: center;
   position: relative;
   h1 {
@@ -466,6 +465,13 @@ p {
         }
       }
     }
+    &.projects-feed{
+      .well{
+        float: left;
+        width: 100%;
+        margin-top: 3em;
+      }
+    }
     &.blog-feed {
       loat: none;
       margin: 2em auto;
@@ -612,6 +618,13 @@ p {
     margin: 0;
     height: 0;
     text-align: center;
+    font-size: 16px;
+
+    a{
+      color: #fff; 
+      border: bottom 1px solid rgba(white, .5);
+      display: inline-block;
+    }
 
     [class*="m-icon"] {
       line-height: .6;
@@ -825,6 +838,15 @@ $brands: "sushio", "sketchfab", "kudoz_logo", "inoui", "rocket_design", "logo_cl
   }
 }
 
-.items .well{
-  margin-top: 4em;
+// Modal about
+.modal-backdrop.in{
+  display: none;
+}
+[class*=material-] [class*="-card"][data-type*=modal]{
+  max-width: 60%;
+  margin: auto 20%;
+
+  [class*="btn"]{
+    margin-bottom: 0;
+  }
 }

@@ -51,7 +51,8 @@
         &:nth-child(3),
         &:nth-child(5),
         &:nth-child(7),
-        &:nth-child(9) {
+        &:nth-child(9),
+        &:nth-child(11) {
           margin: 0;
           margin-right: 2%;
         }
@@ -258,6 +259,21 @@
     text-align: justify;
     letter-spacing: .6px;
   }
+
+  [class*=material-] [class*="-card"][data-type*=modal][data-type*=main-modal]{
+  max-width: 100%;
+  margin: 0 0;
+
+  top:50%;
+  left:0;
+  &.on-screen{
+    transform: translate(0, 0) translateY(-50%);
+
+  }
+  [class*="btn"]{
+    margin-bottom: 0;
+  }
+}
 }
 
 /* Desktop Screen */
