@@ -8589,6 +8589,10 @@ strong {
   font-weight: bold;
 }
 
+small {
+  font-size: 1.2rem;
+}
+
 [disabled] {
   opacity: .5;
   cursor: not-allowed !important;
@@ -8831,6 +8835,9 @@ body.mobile-view .header {
   position: relative;
   overflow: hidden;
 }
+.last-works .items.github-feed li.item .item-card:hover {
+  box-shadow: inset 0 0 0 1px #1DAAF1;
+}
 .last-works .items.github-feed li.item .item-card:first-child {
   border-top-left-radius: 1px;
   border-top-right-radius: 1px;
@@ -8960,6 +8967,9 @@ body.mobile-view .header {
   position: relative;
   overflow: hidden;
 }
+.last-works .items.dribbble-feed .item .item-card:hover {
+  box-shadow: inset 0 0 0 1px #1DAAF1;
+}
 .last-works .items.dribbble-feed .item .item-card img {
   width: 100%;
 }
@@ -9051,6 +9061,42 @@ body.mobile-view .header {
   width: 100%;
   margin-top: 3em;
 }
+.last-works .items.projects-feed ul {
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+.last-works .items.projects-feed li {
+  width: 30%;
+  float: left;
+  list-style: none;
+  padding: .5em;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  margin: 0 1.66%;
+}
+.last-works .items.projects-feed li:hover {
+  box-shadow: inset 0 0 0 1px #1DAAF1;
+}
+.last-works .items.projects-feed li img {
+  max-width: 100%;
+}
+.last-works .items.projects-feed li header {
+  margin: 0;
+}
+.last-works .items.projects-feed li header h2 {
+  margin: 0 0 .5em;
+}
+.last-works .items.projects-feed li article {
+  text-align: center;
+  margin-top: .5em;
+}
+.last-works .items.projects-feed li small {
+  line-height: 1;
+  color: #303030;
+}
 .last-works .items.blog-feed {
   loat: none;
   margin: 2em auto;
@@ -9078,6 +9124,9 @@ body.mobile-view .header {
   box-shadow: 0 0 1px 1px #e2e1e1;
   border-radius: 2px;
   padding: 16px;
+}
+.last-works .items.blog-feed .item:hover {
+  box-shadow: inset 0 0 0 1px #1DAAF1;
 }
 .last-works .items.blog-feed .item:not(:first-child) {
   margin-top: 1em;
@@ -9654,6 +9703,14 @@ body.modal-open [data-view="works"] .header {
 
   .about [href*="mailto"][class*="material-"][class*="-btn"] {
     width: 100%;
+  }
+
+  .last-works .items.projects-feed li {
+    width: 100%;
+    margin: 0 0 1em;
+  }
+  .last-works .items.projects-feed li:first-child {
+    margin-top: 2.5em;
   }
 }
 @media (max-width: 568px) {

@@ -2,7 +2,16 @@
 $(document).ready(function(){
 
 
+  function san(){
+    $('body').removeClass('modal-open');
+    $('*').on('click', function(){
+      $('body').removeClass('modal-open');
+    })
 
+    setTimeout(function(){
+      $('.m-card').removeClass('hidden')
+    }, 1000)
+  }
   function credits(){
     console.log('CREDITS')
     console.log('------------------------------')
@@ -60,6 +69,18 @@ $(document).ready(function(){
   retina_detect: true
 });
 
+  }
+
+  function randomizeHeader(){
+  var st = ["c_1", "c_2", "c_3","c_4", "c_5", "c_6"];
+  var lg = st.length;
+  var random = Math.floor(Math.random() * lg);
+  var it = $('.zone__background .background__layer');
+  var itf = $('.footer');
+  var pre = it.attr('class');
+  var pref = itf.attr('class');
+  it.attr('class', pre +' '+ st[random])
+  itf.attr('class', pref +' '+ st[random])
   }
 
   function detectWidth(){
@@ -238,26 +259,26 @@ function deploy(){
   credits();
 
   particlesLaunch('particles-js');
+  randomizeHeader();
   minimizeHeader();
   detectWidth();
-  changeGalleries()
+  changeGalleries();
   changeView();
   
   getAge();
   getItYears();
   getCurrentYear();
 
+  san()
+
   // Load apis 
   githubProjectsDisplay("LukyVj");
   dribbbleShotsDisplay();
   
   optiDribbbleImages()
-  
 }
 
 deploy();
-
-
 });
 
 

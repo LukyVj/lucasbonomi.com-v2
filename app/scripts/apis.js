@@ -66,6 +66,13 @@ jQuery.fn.getRepos = function(username) {
 })(jQuery, window, document);
 
 // Medium Api 
+if (window.location.hostname == "localhost"){
+  var host = "http://"+window.location.hostname+':9000'
+}
+else{
+  var host = "http://"+ window.location.hostname;
+
+}
 function kimonoCallback(data) {
     var $this = data; 
     var posts = $this.results.posts;
@@ -73,12 +80,39 @@ function kimonoCallback(data) {
       var title = post.title.text;
       var link  = post.title.href;
       var desc  = post.description.text;
-      $('.blog-feed').append('<li class="item"><div><header><h2><a href="'+link+'">'+title+'</a></h2><span class="story-share"><a href="http://www.twitter.com/share?url='+link+'&text=A%20Medium%20post%20of%20@LukyVj%20" target="_blank"><span class="icon-twitter"></span></a>  <a href="http://www.facebook.com/sharer/sharer.php?u='+link+'&t=A%20Medium%20post%20of%20@LukyVj%20" target="_blank"><span class="icon-facebook"></span></a></span></header><div><p>'+desc+'</p></div></div></li>');
+      $('.blog-feed').append('<li class="item"><div><header><h2><a href="'+link+'">'+title+'</a></h2><span class="story-share"><a href="http://www.twitter.com/share?url='+link+'&text=A%20Medium%20post%20of%20@LukyVj%20" target="_blank"><span class="icon-twitter"></span></a>  <a href="http://www.facebook.com/sharer/sharer.php?u='+link+'&t=A%20Medium%20post%20of%20@LukyVj%20" target="_blank"><span class="icon-facebook"></span></a></span></header><div><small>'+desc+'</small></div></div></li>');
     });
   }
 
   $.ajax({
-    "url":"https://www.kimonolabs.com/api/5806o9dk?apikey=V0DwgBZ7AxNN5qo5ILIFLVx5pvFqoM26&callback=kimonoCallback",
+    "url": host + "/scripts/blog.json",
+    "crossDomain":true,
+    "dataType":"jsonp"
+  });
+
+
+// Project Api 
+if (window.location.hostname == "localhost"){
+  var host = "http://"+window.location.hostname+':9000'
+}
+else{
+  var host = "http://"+ window.location.hostname;
+
+}
+function projCallback(data) {
+    var $this = data; 
+    var posts = $this.results.posts;
+    $.each(posts, function(key, post){
+      var title = post.title.text;
+      var link  = post.title.href;
+      var desc  = post.description.text;
+      var img  = post.description.image;
+      $('.projects-feed').append('<li class="item"><a href="'+link+'"><header><h2>'+title+'</h2><img src="'+img+'" /></header><article><small>'+ desc +'</small></article></a></li>');
+    });
+  }
+
+  $.ajax({
+    "url": host + "/scripts/projets.json",
     "crossDomain":true,
     "dataType":"jsonp"
   });

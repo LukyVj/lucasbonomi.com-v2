@@ -1,0 +1,57 @@
+typeof kimonoCallback === 'function' && kimonoCallback({
+
+  "results": {
+    "posts": [
+      {
+        "title": {
+          "href": "https://medium.com/@lukyvj/the-new-pandicons-6ced6a512d03",
+          "text": "The new Pandicons"
+        },
+        "description": {
+          "href": "https://medium.com/@lukyvj/the-new-pandicons-6ced6a512d03",
+          "text": "A story about icons, Sketchs and why you need to save & test your work."
+        }
+      },
+      {
+        "title": {
+          "href": "https://medium.com/@lukyvj/an-introduction-to-gulp-js-295ee489e2c9",
+          "text": "An introduction to Gulp.js"
+        },
+        "description": {
+          "href": "https://medium.com/@lukyvj/an-introduction-to-gulp-js-295ee489e2c9",
+          "text": "A tiny introduction about Gulp.js, and how to start using it."
+        }
+      },
+      {
+        "title": {
+          "href": "https://medium.com/@lukyvj/how-to-create-a-metro-style-accordion-5eb3e1afe780",
+          "text": "How to Create a Metro Style Accordion"
+        },
+        "description": {
+          "href": "https://medium.com/@lukyvj/how-to-create-a-metro-style-accordion-5eb3e1afe780",
+          "text": "This post was written 2 years ago, it’s a repost from http://www.republicof3.com/tutorial-how-to-create-a-metro-style-accordion/"
+        }
+      },
+      {
+        "title": {
+          "href": "https://medium.com/@lukyvj/how-i-animated-color-template-4f45dc4e9410",
+          "text": "How I animated Color-Template"
+        },
+        "description": {
+          "href": "https://medium.com/@lukyvj/how-i-animated-color-template-4f45dc4e9410",
+          "text": "Hi guys, today, I want to cover a chapter about Color-Template! Color-Template is a sweet color tool and guide that we created with Rocket…"
+        }
+      },
+      {
+        "title": {
+          "href": "https://medium.com/@lukyvj/responsive-images-with-css-f76093bd8719",
+          "text": "Responsive images with CSS"
+        },
+        "description": {
+          "href": "https://medium.com/@lukyvj/responsive-images-with-css-f76093bd8719",
+          "text": "Hi guys ! Today I want to talk about a specific topic, which is The Responsives images or at least, “How to change images relatively to the…"
+        }
+      }
+    ]
+  }
+});

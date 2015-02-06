@@ -12,7 +12,7 @@
     font-size: 14px;
   }
 
-    .scroll-down{
+  .scroll-down{
     display: none !important;
   }
   .container {
@@ -231,6 +231,17 @@
   .about [href*="mailto"][class*="material-"][class*="-btn"] {
     width: 100%;
   }
+
+  .last-works .items.projects-feed{
+    li{
+      width: 100%;
+      margin:0 0 1em;
+      &:first-child {
+        margin-top: 2.5em;
+      }
+    }
+  }
+
 }
 
 @media (max-width: 568px) {
@@ -261,19 +272,21 @@
   }
 
   [class*=material-] [class*="-card"][data-type*=modal][data-type*=main-modal]{
-  max-width: 100%;
-  margin: 0 0;
+    max-width: 100%;
+    margin: 0 0;
 
-  top:50%;
-  left:0;
-  &.on-screen{
-    transform: translate(0, 0) translateY(-50%);
+    top:50%;
+    left:0;
+    &.on-screen{
+      transform: translate(0, 0) translateY(-50%);
 
+    }
+    [class*="btn"]{
+      margin-bottom: 0;
+    }
   }
-  [class*="btn"]{
-    margin-bottom: 0;
-  }
-}
+
+
 }
 
 /* Desktop Screen */

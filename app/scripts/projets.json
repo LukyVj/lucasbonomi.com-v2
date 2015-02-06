@@ -1,0 +1,37 @@
+typeof projCallback === 'function' && projCallback({
+
+  "results": {
+    "posts": [
+      {
+        "title": {
+          "href": "http://lukyvj.github.io/Trinity-grid/",
+          "text": "Trinity Grid  ☲"
+        },
+        "description": {
+          "image": "images/projects/project_trinity.png",
+          "text": "12 columns is sometimes too much."
+        }
+      },
+      {
+        "title": {
+          "href": "http://lukyvj.github.io/menu-to-cross-icon/",
+          "text": "Menu to cross icon"
+        },
+        "description": {
+          "image": "images/projects/project_menutoiconcross.png",
+          "text": "One idea, different possibilities."
+        }
+      },
+      {
+        "title": {
+          "href": "http://rocket-design.fr/color-template/",
+          "text": "Color-Template"
+        },
+        "description": {
+          "image": "images/projects/project_colortemplate.png",
+          "text": "Choose the right colors for your designs"
+        }
+      }
+    ]
+  }
+});
