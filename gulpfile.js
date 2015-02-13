@@ -36,7 +36,7 @@ gulp.task('styles', function () {
 
 gulp.task('ap', function(){
     return gulp.src('app/styles/main.css')
-    .pipe(postcss([ coreautoprefixer({ browsers: ['last 2 version'] }) ]))
+    .pipe(postcss([ coreautoprefixer({ browsers: ['last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'] }) ]))
     .pipe(minifycss())
     .pipe(gulp.dest('app/styles/'))
 })

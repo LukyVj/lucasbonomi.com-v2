@@ -4,6 +4,16 @@ typeof projCallback === 'function' && projCallback({
     "posts": [
       {
         "title": {
+          "href": "http://lukyvj.github.io/fifty-shades-of/",
+          "text": "Fifty Shades Of &lt;color>"
+        },
+        "description": {
+          "image": "images/projects/project_fiftyshades.png",
+          "text": "A 50 shades color picker."
+        }
+      },
+      {
+        "title": {
           "href": "http://lukyvj.github.io/Trinity-grid/",
           "text": "Trinity Grid  ☲"
         },

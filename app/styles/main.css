@@ -9075,7 +9075,7 @@ body.mobile-view .header {
   border: 1px solid #e3e3e3;
   border-radius: 4px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-  margin: 0 1.66%;
+  margin: 0 1.66% 1em;
 }
 .last-works .items.projects-feed li:hover {
   box-shadow: inset 0 0 0 1px #1DAAF1;
